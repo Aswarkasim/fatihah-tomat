@@ -36,9 +36,9 @@
 @auth
           <li class="nav-item">
             <a href="/admin/pasien" class="nav-link {{Request::is('admin/pasien*') ? 'active' : ''}}">
-              <i class="nav-icon fas fa-bed"></i>
+              <i class="nav-icon fas fa-history"></i>
               <p>
-                Pasien
+                Riwayat
               </p>
             </a>
           </li>
