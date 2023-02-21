@@ -9,11 +9,11 @@
             <hr>
             <b>Deskripsi</b>
             <p>
-              {{$penyakit->desc}}
+              {!! $penyakit->desc!!}
             </p>
             <hr>
             <b>Penanganan</b>
-            <p>{{$penyakit->penanganan}}</p>
+            <p>{!! $penyakit->penanganan!!}</p>
           </div>
           <div class="col-md-8">
             @include('/admin/penyakit/add_gejala')

@@ -20,8 +20,9 @@
   <thead>
     <tr>
       <th>No</th>
+      <th>Kode Gejala</th>
       <th>Nama</th>
-      {{-- <th>Nilai CF</th> --}}
+      <th>Nilai CF</th>
       <th>Action</th>
     </tr>
   </thead>
@@ -31,8 +32,9 @@
         
     <tr>
       <td width="50px">{{$loop->iteration}}</td>
+      <td>{{$row->kode_gejala}}</td>
       <td>{{$row->name}}</td>
-      {{-- <td>{{$row->nilai_cf}}</td> --}}
+      <td>{{$row->nilai_cf}}</td>
       <td>
         <div class="btn-group">
             <button type="button" class="btn btn-primary"><i class="fa fa-cogs"></i></button>

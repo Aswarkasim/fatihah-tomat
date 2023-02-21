@@ -60,6 +60,8 @@ class AdminGejalaController extends Controller
         // die;
         // dd($request);
         $data = $request->validate([
+
+            'kode_gejala'              => 'required|unique:gejalas',
             'name'              => 'required|min:3',
             'nilai_cf'              => 'required|numeric',
         ]);
@@ -109,6 +111,7 @@ class AdminGejalaController extends Controller
         //
         $gejala = Gejala::find($id);
         $data = $request->validate([
+            'kode_gejala'              => 'required|unique:gejalas,kode_gejala,' . $gejala->id,
             'name'              => 'required|min:3',
             'nilai_cf'              => 'required|numeric',
         ]);
