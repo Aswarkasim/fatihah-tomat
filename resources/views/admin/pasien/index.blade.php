@@ -14,7 +14,7 @@
           <tr>
             <td>{{$loop->iteration}}</td>
             <td><a href="/admin/pasien/detail/{{$item->id}}"><b>{{$item->tanggal}}</b></a></td>
-            <td>{{$item->penyakit->name}}</td>
+            <td>{{isset($item->penyakit) ? $item->penyakit->name : ''}}</td>
             <td>{{$item->persentase}}%</td>
           </tr>
           @endforeach
