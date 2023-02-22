@@ -5,8 +5,7 @@
         <table class="table">
           <tr>
             <td width="100px">No</td>
-            <td>Nama Pasien</td>
-            <td>Umur</td>
+            <td>Tanggal</td>
             <td>Penyakit</td>
             <td>Keakuratan</td>
           </tr>
@@ -14,8 +13,7 @@
           @foreach ($pasien as $item)
           <tr>
             <td>{{$loop->iteration}}</td>
-            <td><a href="/admin/pasien/detail/{{$item->id}}"><b>{{$item->name}}</b></a></td>
-            <td>{{$item->umur}}</td>
+            <td><a href="/admin/pasien/detail/{{$item->id}}"><b>{{$item->tanggal}}</b></a></td>
             <td>{{$item->penyakit->name}}</td>
             <td>{{$item->persentase}}%</td>
           </tr>
