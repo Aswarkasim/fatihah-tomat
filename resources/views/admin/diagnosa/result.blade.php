@@ -50,7 +50,7 @@
       
                   <tr>
                     <td>{{$loop->iteration}}</td>
-                    <td>{{isset($item->gejala) ? $item->gejala->tanggal : ''}}</td>
+                    <td>{{isset($item->gejala) ? $item->gejala->name : ''}}</td>
                     <td>{{$item->nilai_cf}}</td>
                
                   </tr>
