@@ -28,7 +28,7 @@
               @foreach ($penyakit->role as $item)
               <tr>
                 <td>{{$loop->iteration}}</td>
-                <td>{{$item->gejala->name}}</td>
+                <td>{{isset($item->gejalas) ? $item->gejala->name : ''}}</td>
                 <td>{{$item->bobot_cf}}</td>
                 <td>
                   <a href="/admin/role/delete?role_id={{$item->id}}"><i class="fas fa-times"></i></a>
