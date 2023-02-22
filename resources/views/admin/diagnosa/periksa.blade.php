@@ -6,12 +6,8 @@
           <div class="col-md-12">
             <table class="table" style="max-width: 400px">
               <tr>
-                <td>Nama Pasien</td>
-                <td>: {{$pasien->name}}</td>
-              </tr>
-              <tr>
-                <td>Umur</td>
-                <td>: {{$pasien->umur}}</td>
+                <td>Tanggal Pemeriksaan</td>
+                <td>: {{$pasien->tanggal}}</td>
               </tr>
             </table>
           </div>

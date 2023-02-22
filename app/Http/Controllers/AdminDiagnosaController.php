@@ -8,7 +8,6 @@ use App\Models\Pasien;
 use App\Models\Diagnosa;
 use App\Models\Penyakit;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 
 class AdminDiagnosaController extends Controller
@@ -39,8 +38,7 @@ class AdminDiagnosaController extends Controller
     function createPasien(Request $request)
     {
         $data = [
-            'name'  => $request->name,
-            'umur'  => $request->umur
+            'tanggal'  => $request->tanggal,
         ];
         $pasien = Pasien::create($data);
         //set session pasien id

@@ -4,20 +4,14 @@
       <div class="card-body">
         
         <a href="/admin/diagnosa" class="btn btn-primary"><i class="fas fa-file"></i> Dianosa Baru</a>
-        <a href="/admin/pasien/print/{{$pasien->id}}" class="btn btn-warning" target="blank"><i class="fas fa-print"></i> Print</a>
+        <a href="/pasien/print/{{$pasien->id}}" class="btn btn-warning" target="blank"><i class="fas fa-print"></i> Print</a>
         <div class="row">
           <div class="col-md-6">
             <table class="table">
               <tr>
-                <td>Nama Pasien</td>
-                <td>: {{$pasien->name }}</td>
+                <td>Tanggal Identifikasi</td>
+                <td>: {{$pasien->tanggal }}</td>
               </tr>
-
-              <tr>
-                <td>Umur</td>
-                <td>: {{$pasien->umur }} Tahun</td>
-              </tr>
-
               <tr>
                 <td>Keakuratan</td>
                 <td>: {{$pasien->akumulasi_cf }}</td>

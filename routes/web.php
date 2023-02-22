@@ -56,6 +56,8 @@ Route::prefix('/admin/diagnosa')->group(function () {
 });
 
 
+Route::get('/pasien/print/{id}', [AdminPasienController::class, 'print']);
+
 Route::prefix('/admin')->middleware('auth')->group(function () {
 
 

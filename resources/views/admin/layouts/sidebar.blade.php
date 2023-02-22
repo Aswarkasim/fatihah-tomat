@@ -29,7 +29,7 @@
             <a href="/admin/diagnosa" class="nav-link {{Request::is('admin/diagnosa*') ? 'active' : ''}}">
               <i class="nav-icon fas fa-spinner"></i>
               <p>
-                Diagnosa
+                Identifikasi Penyakit
               </p>
             </a>
           </li>

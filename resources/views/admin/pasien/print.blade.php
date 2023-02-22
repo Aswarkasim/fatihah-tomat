@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Cetak Hasil Diagnosa</title>
+  <title>CETAK HASIL IDENTIFIKASI</title>
    <link rel="stylesheet" href="/dist/css/adminlte.min.css">
 </head>
 <body>
@@ -27,19 +27,14 @@
 <body>
 
   <div class="text-center">
-    <h4><strong>CETAK HASIL DIAGNOSA</strong></h4>
-    <h5><strong>DIAGNOSIS AWAL PENYAKIT GIGI</strong></h5>
+    <h4><strong>CETAK HASIL IDENTIFIKASI</strong></h4>
+    <h5><strong>IDENTIFIKASI PENYAKIT PADA TANAMAN TOMAT</strong></h5>
   </div>
 
      <table class="table">
       <tr>
-        <td width="300px">Nama Pasien</td>
-        <td>: {{$pasien->name }}</td>
-      </tr>
-
-      <tr>
-        <td>Umur</td>
-        <td>: {{$pasien->umur }} Tahun</td>
+        <td width="300px">Tanggal Identifikasi</td>
+        <td>: {{$pasien->tanggal }}</td>
       </tr>
 
       <tr>
