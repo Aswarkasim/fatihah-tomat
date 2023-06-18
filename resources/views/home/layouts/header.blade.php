@@ -27,13 +27,13 @@
         </ul>
 
         @auth
-        <a href="/profile" class="btn btn-success btn-sm mx-2">
-          <i class="fas fa-user"></i> Profile
+        <a href="/admin/dashboard" class="btn btn-success btn-sm mx-2">
+          <i class="fas fa-user"></i> Profil
         </a>
        
         @else
           <a href="/admin/auth" class="btn btn-success btn-sm">
-            <i class="fas fa-sign-in-alt"></i> MASUK
+            <i class="fas fa-sign-in-alt"></i> Masuk
           </a>
         @endauth
 
