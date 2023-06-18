@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
 
-    <title>KTC | Scrollup Studio</title>
+    <title>SISTEM PAKAR</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/carousel/">
 
@@ -16,6 +16,8 @@
      {{-- <link href="/plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> --}}
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
        <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="/dist/css/carousel.css" rel="stylesheet">

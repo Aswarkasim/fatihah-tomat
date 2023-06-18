@@ -61,6 +61,15 @@
             </a>
           </li>
 
+          <li class="nav-item">
+            <a href="/admin/galeri" class="nav-link {{Request::is('admin/galeri*') ? 'active' : ''}}">
+              <i class="nav-icon fas fa-image"></i>
+              <p>
+                Galeri
+              </p>
+            </a>
+          </li>
+
           
 
             {{-- <li class="nav-item {{Request::is('admin/posts*') ? 'menu-open' : ''}}">

@@ -9,10 +9,12 @@ use App\Http\Controllers\AdminBannerController;
 use App\Http\Controllers\AdminCategoryPostController;
 use App\Http\Controllers\AdminConfigurationController;
 use App\Http\Controllers\AdminDiagnosaController;
+use App\Http\Controllers\AdminGaleriController;
 use App\Http\Controllers\AdminGejalaController;
 use App\Http\Controllers\AdminPasienController;
 use App\Http\Controllers\AdminPenyakitController;
 use App\Http\Controllers\AdminRoleController;
+use App\Http\Controllers\HomeDiagnosaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +27,7 @@ use App\Http\Controllers\AdminRoleController;
 |
 */
 
-Route::get('/', [AdminDiagnosaController::class, 'index']);
+Route::get('/', [HomeController::class, 'index']);
 
 
 
@@ -73,6 +75,7 @@ Route::prefix('/admin')->middleware('auth')->group(function () {
     Route::resource('/banner', AdminBannerController::class);
     Route::resource('/gejala', AdminGejalaController::class);
     Route::resource('/penyakit', AdminPenyakitController::class);
+    Route::resource('/galeri', AdminGaleriController::class);
 
     Route::post('/role/create', [AdminRoleController::class, 'create']);
     Route::get('/role/delete', [AdminRoleController::class, 'delete']);
@@ -86,6 +89,17 @@ Route::prefix('/admin')->middleware('auth')->group(function () {
 });
 
 Route::prefix('/home')->group(function () {
-    // Route::resource('/mitra', HomeMitraController::class);;
-    // Route::resource('/layanan', HomeLayananController::class);;
+
+    Route::get('/tentang', [HomeController::class, 'tentang']);
+    Route::get('/galeri', [HomeController::class, 'galeri']);
+    Route::prefix('/diagnosa')->group(function () {
+
+        Route::get('/', [HomeDiagnosaController::class, 'index']);
+        Route::get('/periksa', [HomeDiagnosaController::class, 'periksa']);
+        Route::get('/pilih', [HomeDiagnosaController::class, 'pilih']);
+        Route::get('/delete', [HomeDiagnosaController::class, 'delete']);
+        Route::get('/proses', [HomeDiagnosaController::class, 'proses']);
+        Route::get('/result', [HomeDiagnosaController::class, 'result']);
+        Route::post('/pasien/create', [HomeDiagnosaController::class, 'createPasien']);
+    });
 });

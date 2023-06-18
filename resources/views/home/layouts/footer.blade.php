@@ -10,9 +10,13 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="/vendor/sweetalert/sweetalert2.all.min.js"></script>
 
 <script>
+
+AOS.init()
+
     // Tommbol hapus
   $('.tombol-hapus').on('click', function (e) {
     // Mematikan href
