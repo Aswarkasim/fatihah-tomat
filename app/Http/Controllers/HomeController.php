@@ -20,7 +20,7 @@ class HomeController extends Controller
             'post'     => Post::with('category')->paginate(8),
             'content'  => 'home/home/index'
         ];
-        return view('home/layouts/wrapper', $data);
+        return view('home/layouts/wrapper', $data)
     }
 
     public function tentang()
